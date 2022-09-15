@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript getElementsByTagName() Demo</title>
+</head>
+<body>
+    <h1>JavaScript getElementsByTagName() Demo</h1>
+    <h2>Welcome to Dorustree</h2>
+    <p>Dorustree offers to hire software developers with deep industry expertise to build custom software development, which is dependable and scalable software</p>
+    <h2>Dorustree Linkedin</h2>
+    <p>Dorustree. IT Services and IT Consulting. Trichy, Tamilnadu 368 followers. Heping Enterprises and Startups in Product Engineering & Custom Software Development.</p>
+    <h2>Home</h2>
+    <p>Dorustree enables tech companies to ramp up development by instantly adding full-time contracted engineers.</p>
+
+    <button id="btnCount">Count H2</button>
+
+    <script>
+        let btn = document.getElementById('btnCount');
+        btn.addEventListener('click', () => {
+            let headings = document.getElementsByTagName('h2');
+            alert(`The number of H2 tags: ${headings.length}`);
+        });
+    </script>
+</body>
+
+</html>
